@@ -1,0 +1,17 @@
+.input {
+  width: 452px;
+  height: 38px;
+
+  padding: 9px 0 8px 17px;
+
+  color: var(--Secondary-Light-Color, #abb5be);
+  font-family: Inter;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 21px; /* 131.25% */
+
+  border-radius: 4px;
+border: 1px solid var(--Stroke-Input, #CED4DA);
+background: var(---Gray-White, #FFF);
+}
