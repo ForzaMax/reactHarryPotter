@@ -14,19 +14,7 @@ export const Layout = () => {
       <Header></Header>
       <main className={s.main}>
         {filteredCharacters.map((character) => {
-          return (
-            <Card
-              key={character.id}
-              id={character.id}
-              name={character.name}
-              actor={character.actor}
-              house={character.house}
-              gender={character.gender}
-              image={character.image}
-              alive={character.alive}
-              wand={character.wand}
-            />
-          );
+          return <Card key={character.id} {...character} />;
         })}
       </main>
     </Container>

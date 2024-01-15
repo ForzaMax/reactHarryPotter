@@ -5,6 +5,7 @@ import { FavoritesProvider } from "../providers/FavoritesContext/FavoritesProvid
 import "./Global.css";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 function App() {
+  // Router в Provider запихать
   const router = createBrowserRouter([
     {
       path: "/",

@@ -22,7 +22,7 @@ export const FavoritesProvider = ({ children }) => {
   }
 
   function removeFavorites(id) {
-    setFavorites(favorites.filter((item) => item!== id));
+    setFavorites(favorites.filter((item) => item !== id));
   }
 
   function isFavorite(id) {

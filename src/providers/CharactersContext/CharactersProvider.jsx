@@ -8,12 +8,12 @@ export const CharactersProvider = ({ children }) => {
   const [inputValue, setValue] = useState("");
   const [schoolValue, setSchoolValue] = useState("All");
 
+  // Вынести в App этот UseEffect
   useEffect(() => {
     fetch("https://hp-api.onrender.com/api/characters")
       .then((res) => res.json())
-      .then((data) => setCharacters(data))
-      .finally(() => console.log(characters));
-  }, [inputValue, schoolValue]);
+      .then((data) => setCharacters(data));
+  }, []);
 
   function onChangeInput(e) {
     setValue(e.target.value);
